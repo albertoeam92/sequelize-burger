@@ -3,7 +3,7 @@ var Sequelize = require("sequelize");
 var sequelize = require("../config/connection.js");
 
 
-var burger = sequelieze.define("burger_db", {
+var burger = sequelize.define("burger", {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
@@ -24,7 +24,7 @@ var burger = sequelieze.define("burger_db", {
     type: Sequelize.DATE
   }
 
-};
+});
 
 burger.sync();
 
